@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_striteri.c                                      :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: tkurosaw <tkurosaw@student.42.fr>          +#+  +:+       +#+        */
+/*   By: kurosawaitsuki <kurosawaitsuki@student.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/06 20:19:32 by kurosawaits       #+#    #+#             */
-/*   Updated: 2022/11/16 13:17:23 by tkurosaw         ###   ########.fr       */
+/*   Updated: 2022/11/26 22:00:26 by kurosawaits      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,3 +26,6 @@ void	ft_striteri(char *s, void (*f)(unsigned int, char *))
 		}
 	}
 }
+
+// 関数ポインタが指す関数の第一引数がunsigned int型なので変換する.
+// size_t型よりもunsigned int型の方が最大値大きい.

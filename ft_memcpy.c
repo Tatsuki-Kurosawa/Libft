@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_memcpy.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: tkurosaw <tkurosaw@student.42.fr>          +#+  +:+       +#+        */
+/*   By: kurosawaitsuki <kurosawaitsuki@student.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/11 20:38:34 by kurosawaits       #+#    #+#             */
-/*   Updated: 2022/11/25 21:26:10 by tkurosaw         ###   ########.fr       */
+/*   Updated: 2022/11/26 21:57:13 by kurosawaits      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -49,3 +49,9 @@ void	*ft_memcpy(void *dest, const void *src, size_t n)
 // 	return (0);
 // }
 // gcc -Wall -Wextra -Werror ft_memcpy.c
+
+// voidポインタ型だと一度に見るべき容量がわからないため、どの容量にも対応できるよう1バイトでみれるcharポインタ型を利用.
+// 変換を行なってからコピーを行う.
+// メモリが被った時の動作は未定義なので、引数にrestrictの修飾子あり.
+// srcとdstの容量は同じでなくてはならないのか
+// どちらかがNULLの時はsegfaが起きる

@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_lstsize.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: tkurosaw <tkurosaw@student.42.fr>          +#+  +:+       +#+        */
+/*   By: kurosawaitsuki <kurosawaitsuki@student.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/02 17:31:03 by kurosawaits       #+#    #+#             */
-/*   Updated: 2022/11/18 19:55:56 by tkurosaw         ###   ########.fr       */
+/*   Updated: 2022/11/26 21:56:06 by kurosawaits      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,3 +27,7 @@ int	ft_lstsize(t_list *lst)
 	count++;
 	return (count);
 }
+
+// ノードの数をカウント
+// whileで条件を満たさなくなった場合、lstは最後のノードにいるがこの分をカウントしていないため、
+// 抜けた後にインクリメントすることに注意

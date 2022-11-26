@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strncmp.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: tkurosaw <tkurosaw@student.42.fr>          +#+  +:+       +#+        */
+/*   By: kurosawaitsuki <kurosawaitsuki@student.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/16 07:29:42 by kurosawaits       #+#    #+#             */
-/*   Updated: 2022/11/25 21:39:46 by tkurosaw         ###   ########.fr       */
+/*   Updated: 2022/11/26 22:01:49 by kurosawaits      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -42,3 +42,5 @@ int	ft_strncmp(const char *s1, const char *s2, size_t n)
 // 	return (0);
 // }
 // gcc -Wall -Wextra -Werror ft_strncmp.c
+
+// 比較はunsigned char型を使って行われる点に注意

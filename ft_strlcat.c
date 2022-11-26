@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strlcat.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: tkurosaw <tkurosaw@student.42.fr>          +#+  +:+       +#+        */
+/*   By: kurosawaitsuki <kurosawaitsuki@student.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/16 02:47:46 by kurosawaits       #+#    #+#             */
-/*   Updated: 2022/11/25 21:32:28 by tkurosaw         ###   ########.fr       */
+/*   Updated: 2022/11/26 22:01:02 by kurosawaits      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -52,3 +52,10 @@ size_t	ft_strlcat(char	*dst, const char *src, size_t dstsize)
 // 	return (0);
 // }
 // gcc -Wall -Wextra -Werror ft_strlcat.c ft_strlen.c
+
+// 全てつなげられたかどうかが返り値をみてわかる
+// 必ずヌル終端させるのでdstsize-strlen(dst)-1分連結となる
+// dstsizeで指定した値より返り値が大きかったら、途中までしか繋げられていない
+// → データロスの発生
+// dstsizeで指定した値より返り値が小さかったら、全てコピー繋げることができた
+// → データロスは発生しない

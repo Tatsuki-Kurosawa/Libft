@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strtrim.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: tkurosaw <tkurosaw@student.42.fr>          +#+  +:+       +#+        */
+/*   By: kurosawaitsuki <kurosawaitsuki@student.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/20 20:55:14 by kurosawaits       #+#    #+#             */
-/*   Updated: 2022/11/25 21:05:19 by tkurosaw         ###   ########.fr       */
+/*   Updated: 2022/11/26 22:02:35 by kurosawaits      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -49,3 +49,7 @@ char	*ft_strtrim(char const *s1, char const *set)
 // }
 // gcc -Wall -Wextra -Werror ft_strtrim.c ft_strchr.c
 // ft_strlen.c ft_substr.c ft_strdup.c
+
+// s1からsetにある文字を削ぎ落とす
+// setとheadから取ってきた一文字ずつをft_strchrに入れ、setにあればポインタが返り、なければNULLが返る性質を利用
+// これを前と後ろから行なっていく

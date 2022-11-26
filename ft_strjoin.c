@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strjoin.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: tkurosaw <tkurosaw@student.42.fr>          +#+  +:+       +#+        */
+/*   By: kurosawaitsuki <kurosawaitsuki@student.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/06 20:20:11 by kurosawaits       #+#    #+#             */
-/*   Updated: 2022/11/25 21:31:54 by tkurosaw         ###   ########.fr       */
+/*   Updated: 2022/11/26 22:00:48 by kurosawaits      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -55,3 +55,6 @@ char	*ft_strjoin(char const *s1, char const *s2)
 // 	return (0);
 // }
 // gcc -Wall -Wextra -Werror ft_strjoin.c ft_strlen.c
+
+// 新しいポインタを作り二つの文字列をつなげて入れる
+// mallocでメモリを確保しているため、strlcatのようなdstが容量を多く持っているといったことは心配しなくていい

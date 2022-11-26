@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_memmove.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: tkurosaw <tkurosaw@student.42.fr>          +#+  +:+       +#+        */
+/*   By: kurosawaitsuki <kurosawaitsuki@student.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/12 12:46:09 by kurosawaits       #+#    #+#             */
-/*   Updated: 2022/11/25 21:26:23 by tkurosaw         ###   ########.fr       */
+/*   Updated: 2022/11/26 21:57:43 by kurosawaits      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -44,3 +44,8 @@ void	*ft_memmove(void *dst, const void *src, size_t len)
 //     return (0);
 // }
 // gcc -Wall -Wextra -Werror ft_memmove.c
+
+// voidポインタ型だと一度に見るべき容量がわからないため、どの容量にも対応できるよう1バイトでみれるcharポインタ型を利用.
+// 変換を行なってからコピーを行う.
+// メモリの位置によりコピーの仕方を変更する.
+// どちらかがNULLの場合、segfaが起きる

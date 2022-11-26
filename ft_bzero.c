@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_bzero.c                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: tkurosaw <tkurosaw@student.42.fr>          +#+  +:+       +#+        */
+/*   By: kurosawaitsuki <kurosawaitsuki@student.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/11 20:09:53 by kurosawaits       #+#    #+#             */
-/*   Updated: 2022/11/25 21:07:22 by tkurosaw         ###   ########.fr       */
+/*   Updated: 2022/11/26 21:52:12 by kurosawaits      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -38,3 +38,7 @@ void	ft_bzero(void *s, size_t n)
 //     return 0;
 // }
 // gcc -Wall -Wextra -Werror ft_bzero.c
+
+// 本家ではヌルポインタが引数に渡された場合を定義していないため定義不要
+// nが与えられたポインタのバイト数より大きい場合、最後まで0埋めしてabort
+// 本家では警告となり、無理やり実行するとabort

@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strchr.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: tkurosaw <tkurosaw@student.42.fr>          +#+  +:+       +#+        */
+/*   By: kurosawaitsuki <kurosawaitsuki@student.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/12 20:13:43 by kurosawaits       #+#    #+#             */
-/*   Updated: 2022/11/25 21:30:49 by tkurosaw         ###   ########.fr       */
+/*   Updated: 2022/11/26 22:00:05 by kurosawaits      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -39,3 +39,10 @@ char	*ft_strchr(const char *s, int c)
 // 	return (0);
 // }
 // gcc -Wall -Wextra -Werror ft_strchr.c
+
+// memchar関数とほぼ同じ. 異なるのはunsigned char型へ変換するのではなく、char型に変換するということ.
+// この辺はmanで定義されている.
+
+// 見つかった場所のポインタを返す. なければNULL
+// 第一引数がNULLの場合はsegfa
+// cについては越えれば一番下または一番上になる

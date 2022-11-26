@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_memcmp.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: tkurosaw <tkurosaw@student.42.fr>          +#+  +:+       +#+        */
+/*   By: kurosawaitsuki <kurosawaitsuki@student.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/06 19:30:08 by kurosawaits       #+#    #+#             */
-/*   Updated: 2022/11/25 21:25:50 by tkurosaw         ###   ########.fr       */
+/*   Updated: 2022/11/26 21:56:41 by kurosawaits      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -45,3 +45,5 @@ int	ft_memcmp(const void *s1, const void *s2, size_t n)
 // 	return (0);
 // }
 // gcc -Wall -Wextra -Werror ft_memcmp.c
+
+// 比較する値はunsigned char型として扱うため、第一引数をunsigned char型に変換する.

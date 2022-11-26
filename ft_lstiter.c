@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_lstiter.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: tkurosaw <tkurosaw@student.42.fr>          +#+  +:+       +#+        */
+/*   By: kurosawaitsuki <kurosawaitsuki@student.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/03 17:28:31 by kurosawaits       #+#    #+#             */
-/*   Updated: 2022/11/11 21:29:41 by tkurosaw         ###   ########.fr       */
+/*   Updated: 2022/11/26 21:55:12 by kurosawaits      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,3 +23,7 @@ void	ft_lstiter(t_list *lst, void (*f)(void *))
 		}
 	}
 }
+
+// 関数もアドレス上に格納されるので、その先頭アドレスの存在も確認する必要がある.
+// ノードのコンテンツ全てに対して関数適用
+// iterate：繰り返す

@@ -6,7 +6,7 @@
 /*   By: kurosawaitsuki <kurosawaitsuki@student.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/11 18:03:12 by kurosawaits       #+#    #+#             */
-/*   Updated: 2022/11/26 21:27:08 by kurosawaits      ###   ########.fr       */
+/*   Updated: 2022/11/26 22:01:29 by kurosawaits      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -33,3 +33,5 @@ size_t	ft_strlen(const char *s)
 // 	return (0);
 // }
 // gcc -Wall -Wextra -Werror ft_strlen.c
+
+// ヌル文字はカウントしない.

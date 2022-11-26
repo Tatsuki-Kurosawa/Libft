@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strlcpy.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: tkurosaw <tkurosaw@student.42.fr>          +#+  +:+       +#+        */
+/*   By: kurosawaitsuki <kurosawaitsuki@student.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/15 21:51:28 by kurosawaits       #+#    #+#             */
-/*   Updated: 2022/11/25 21:38:56 by tkurosaw         ###   ########.fr       */
+/*   Updated: 2022/11/26 22:01:15 by kurosawaits      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -47,3 +47,7 @@ size_t	ft_strlcpy(char *dst, const char *src, size_t dstsize)
 // 	return (0);
 // }
 // gcc -Wall -Wextra -Werror ft_strlcpy.c ft_strlen.c
+
+// srcの長さが返ってくることによって、全てコピーされたかどうかがわかる.
+// 引数として送ったdstsizeよりも返り値の方が大きかったら全てコピーできていない.
+// 反対に引数として送ったdstsizeよりも返り値の方が小さかったら全てコピーできている.

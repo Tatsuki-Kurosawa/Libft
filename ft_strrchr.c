@@ -40,3 +40,6 @@ char	*ft_strrchr(const char *s, int c)
 //     return (0);
 // }
 // gcc -Wall -Wextra -Werror ft_strrchr.c ft_strlen.c
+
+// 後ろ側から探し、合致したところのアドレスを指すポインタを返す
+// ft_strchrの逆バージョン

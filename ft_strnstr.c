@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strnstr.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: tkurosaw <tkurosaw@student.42.fr>          +#+  +:+       +#+        */
+/*   By: kurosawaitsuki <kurosawaitsuki@student.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/15 21:03:12 by kurosawaits       #+#    #+#             */
-/*   Updated: 2022/11/25 21:40:41 by tkurosaw         ###   ########.fr       */
+/*   Updated: 2022/11/26 22:02:05 by kurosawaits      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -45,3 +45,8 @@ char	*ft_strnstr(const char *haystack, const char *needle, size_t len)
 // 	return (0);
 // }
 // gcc -Wall -Wextra -Werror ft_strnstr.c ft_strlen.c ft_memcmp.c
+
+// haystack内にneedleがあるかどうかを判断.
+// あったら合ったところのポインタを返す.
+// memcmpで処理を行うが、lenで指定した範囲を超えて探してしまう場合がある.
+// haystackのバイト数からneedleのバイト数を引いたバイト数分だけ、needleの先頭要素として見ていく

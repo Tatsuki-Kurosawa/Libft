@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_calloc.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: tkurosaw <tkurosaw@student.42.fr>          +#+  +:+       +#+        */
+/*   By: kurosawaitsuki <kurosawaitsuki@student.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/06 19:20:56 by kurosawaits       #+#    #+#             */
-/*   Updated: 2022/11/25 21:21:02 by tkurosaw         ###   ########.fr       */
+/*   Updated: 2022/11/26 21:52:26 by kurosawaits      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -43,3 +43,6 @@ void	*ft_calloc(size_t count, size_t size)
 //     return 0;
 // }
 // gcc -Wall -Wextra -Werror ft_calloc.c ft_bzero.c
+
+// mallocの引数がsize_t型であるため、countとsizeの積がsize_t型の最大値を超えてはならない
+// そのため、mallocで確保する前に確認を行なっている

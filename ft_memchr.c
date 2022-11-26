@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_memchr.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: tkurosaw <tkurosaw@student.42.fr>          +#+  +:+       +#+        */
+/*   By: kurosawaitsuki <kurosawaitsuki@student.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/13 14:51:42 by kurosawaits       #+#    #+#             */
-/*   Updated: 2022/11/25 21:24:25 by tkurosaw         ###   ########.fr       */
+/*   Updated: 2022/11/26 21:56:26 by kurosawaits      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -49,3 +49,5 @@ void	*ft_memchr(const void *s, int c, size_t n)
 //     return (0);
 // }
 // gcc -Wall -Wextra -Werror ft_memchr.c
+
+// 第二引数のcをunsigned charに変換してから一致しているかどうかの評価を行うので、第一引数sはunsigned char型に変換する.

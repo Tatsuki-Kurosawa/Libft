@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_atoi.c                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: tkurosaw <tkurosaw@student.42.fr>          +#+  +:+       +#+        */
+/*   By: kurosawaitsuki <kurosawaitsuki@student.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/16 06:42:11 by kurosawaits       #+#    #+#             */
-/*   Updated: 2022/11/26 18:08:36 by tkurosaw         ###   ########.fr       */
+/*   Updated: 2022/11/26 21:51:54 by kurosawaits      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -71,3 +71,5 @@ static int	check_ovunflow(int sign, unsigned long sum, char c)
 //     return 0;
 // }
 // gcc -Wall -Wextra -Werror ft_atoi.c ft_isdigit.c
+
+// int型の最大値最小値を超えた文字列を入力すると、一周する
